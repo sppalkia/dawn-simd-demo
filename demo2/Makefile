@@ -5,7 +5,7 @@ PASSES=-Rpass=loop-vectorize -Rpass-analysis=loop-vectorize -Rpass-missed=loop-v
 .PHONY: all clean
 
 demo: 
-	${CC} ${FLAGS} ${PASSES} demo2.c -o demo
+	${CC} ${FLAGS} demo2.c -o demo
 
 # Builds LLVM IR.
 llvm:

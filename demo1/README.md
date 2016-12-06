@@ -1,7 +1,8 @@
 #demo1
 
 Shows a number of examples where compilers may or may not vectorize code
-depending on various patterns.
+depending on various patterns. These use `clang` and were tested on
+`clang version 3.7.1 (Target: x86_64-apple-darwin16.1.0)`.
 
 Set the `#define` for the functions you want to see to`1` (e.g., `#define
 ADD_ONE 1` if you want to see the report for the `add_one` function).

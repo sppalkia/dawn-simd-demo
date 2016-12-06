@@ -3,7 +3,7 @@ demo2
 
 Implements a simple reduction with a branch using Intel intrinsics.
 
-See [this](https://software.intel.com/sites/landingpage/IntrinsicsGuide/) link for the authoratitive source on the intrinsics available.
+See [this](https://software.intel.com/sites/landingpage/IntrinsicsGuide/) link for the authoratitive source on the intrinsics.
 Some might not be available for your computer. As a set of general guidelines:
 
 * You almost certainly have SSE, SSE2, SSE3, and SSE4.1/4.2.

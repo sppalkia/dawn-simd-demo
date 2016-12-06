@@ -1,6 +1,6 @@
 CC=clang
 FLAGS=-O3 -msse3 -ftree-vectorize
-PASSES=-Rpass=loop-vectorize -Rpass-analysis=loop-vectorize -Rpass-missed=loop-vectorize
+PASSES=-Rpass=loop-vectorize -Rpass-analysis=loop-vectorize -Rpass-missed=loop-vectorize -ffast-math
 
 .PHONY: all clean
 

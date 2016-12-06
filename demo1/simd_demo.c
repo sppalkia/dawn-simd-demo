@@ -1,13 +1,13 @@
 
 #include <math.h>
 
-#define ADD_ONE                 0
-#define SUM_LARGE_FLOATS        0
-#define SUM_LARGE_INTS          0
-#define NESTED_IFS              0
-#define SQRT_EACH               0
-#define UPDATE                  0
-#define UPDATE_RESTRICT         0
+#define ADD_ONE                 1
+#define SUM_LARGE_FLOATS        1
+#define SUM_LARGE_INTS          1
+#define NESTED_IFS              1
+#define SQRT_EACH               1
+#define UPDATE                  1
+#define UPDATE_RESTRICT         1
 
 #if ADD_ONE
 void add_one(float *v, unsigned length) {
@@ -23,9 +23,9 @@ float sum_large_floats(const float *v, unsigned length) {
     float result = 0;
     for (int i = 0; i < length; i++) {
         float val = v[i];
-        //if (val >= 100.0f) {
+        if (val >= 100.0f) {
             result += val;
-        //}
+        }
     }
     return result;
 }
@@ -37,9 +37,9 @@ int sum_large_integers(const int *v, unsigned length) {
     int result = 0;
     for (int i = 0; i < length; i++) {
         int val = v[i];
-        //if (val >= 100) {
+        if (val >= 100) {
             result += val;
-        //}
+        }
     }
     return result;
 }

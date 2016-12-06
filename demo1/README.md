@@ -11,7 +11,7 @@ Run `make` to build an LLVM IR file.
 ## Compiler Flags
 
 * `-O3`: Optimize lots
-* `msse3`: Use SSE3; most Intel laptops will have this.
+* `-msse3`: Use SSE3; most Intel laptops will have this.
 * `-Rpass=loop-vectorize`: Specify which loops were vectorized.
 * `-Rpass-missed=loop-vectorize`: Specify which loops were not vectorized.
 * `-Rpass-analysis=loop-vectorize`: Specify why unvectorized loops weren't vectorized.

@@ -5,7 +5,7 @@
 // For Intel intrinsics.
 #include <immintrin.h>
 
-// Sums all the values in v which are greater than 100.
+// Sums all the values in v which are greater than 10.
 double sum_large_floats(const float *v, unsigned length, unsigned trials) {
     double result = 0.0f;
     for (unsigned t = 0; t < trials; t++) {
@@ -19,7 +19,7 @@ double sum_large_floats(const float *v, unsigned length, unsigned trials) {
     return result;
 }
 
-// Sums all the values in v which are greater than 100.
+// Sums all the values in v which are greater than 10.
 double sum_large_floats_vectorized(const float *v, unsigned length, unsigned trials) {
 
     double result = 0.0f;
@@ -62,10 +62,12 @@ int main(int argc, char **argv) {
     const unsigned LEN = 1000000;
     float *v  = malloc(sizeof(float) * LEN);
 
+    // Generate some bogus data.
     for (int i = 0; i < LEN; i++) {
         v[i] = (float)((i+1) % 20);
     }
 
+    // For timing.
     struct timeval start, end, diff;
     double result;
 
